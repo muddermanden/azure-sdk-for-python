@@ -9064,7 +9064,7 @@ class NetworkSecurityGroupRule(_model_base.Model):
      (i.e. 10.10.10.10), IP subnet (i.e. 192.168.1.0/24), default tag, or * (for all addresses).  If
      any other values are provided the request fails with HTTP status code 400. Required."""
     source_port_ranges: Optional[List[str]] = rest_field(name="sourcePortRanges")
-    """The source port ranges to match for the rule. Valid values are '\ *' (for all ports 0 - 65535),
+    """The source port ranges to match for the rule. Valid values are '\\ *' (for all ports 0 - 65535),
      a specific port (i.e. 22), or a port range (i.e. 100-200). The ports must be in the range of 0
      to 65535. Each entry in this collection must not overlap any other entry (either a range or an
      individual port). If any other values are provided the request fails with HTTP status code 400.
